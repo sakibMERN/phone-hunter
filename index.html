@@ -9,6 +9,11 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* Spinner styles */
@@ -250,7 +255,7 @@
     <div class="w-full max-w-sm mx-auto mt-5">
       <div class="flex items-center">
         <input
-        id="search-box"
+          id="search-box"
           type="text"
           placeholder="Search..."
           class="w-full px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -262,7 +267,7 @@
         >
           Search
         </button>
-      </form>
+      </div>
     </div>
     <!-- all phone show in this container -->
     <div
@@ -272,30 +277,29 @@
       <!-- here we showed our spinner -->
       <div id="spinner"></div>
       <!-- here we make our ophone card  -->
+    </div>
 
-</div>
+    <!-- see all button -->
+    <div class="text-center m-10">
+      <button onclick="handleShowAll()" class="btn btn-primary btn-wide">
+        See All
+      </button>
+    </div>
 
-<div class="text-center">
-    <button onclick="handleShowAll()" class="btn  bg-red-500 mt-5">Show All</button>
+    <div class="text-center">
+      <!-- <button onclick="handleShowAll()" class="btn  bg-red-500 mt-5">Show All</button> -->
+    </div>
 
-</div>
+    <!-- show modal here  -->
 
- <!-- show modal here  -->
+    <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+    <div id="modal-container">
+      
+    </div>
 
-<!-- Open the modal using ID.showModal() method -->
+    <!-- Open the modal using ID.showModal() method -->
 
-
-
-<div id="modal-container">
-    
-</div>
-
-
-
-
-
-
-     
+    <div id="modal-container"></div>
 
     <!-- footer  -->
     <div class="mt-12">
@@ -384,10 +388,6 @@
         </div>
       </footer>
     </div>
-
-   
-
-    
 
     <script src="./index.js"></script>
   </body>
